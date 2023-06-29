@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>Assigment01_110062329</title>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+       <link 
+            href="css/index.css"
+            rel="stylesheet"
+        />
+        <script src="javascipt/canva.js"></script>
+        <script src="javascipt/fabric.js"></script>
+    </head>
+    <body>
+        <!--title-->
+        <div id="title">
+            <h1>CANVAS</h1>
+        </div>
+        <!--canvas--> 
+        <div class="container" id="main_container">
+            <div class="container" id="canva_container">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="attr_container">
+                <div class="attr_subcontainer">
+                    <label id="pen_width_label">pen width</label>
+                    <div class="range"> 
+                        <input type="range" name="penwidth" id="penwidth" step="2"/>
+                        <span id="pen_width_span">50%</span>
+                    </div>
+                </div>
+                <div class="attr_subcontainer">
+                    <label id="fontsize_label">fontsize</label>
+                    <div class="range">
+                        <input type="range" name="fontsize" id="fontsize">
+                        <span id="pen_fontsize_span">50%</span>
+                    </div>
+                </div>
+                
+                <div class="attr_subcontainer" id="color_selector">
+                    <label id="color_label">color</label>
+                    <div id="color_picker">
+                        <label for="color_input" id="color_type"></label>
+                        <input type="checkbox" id="color_input" checked></input>
+                        <canvas id="color_block"></canvas>
+                        <canvas id="color_strip"></canvas>
+                    </div>
+                </div>
+                <div class="attr_subcontainer">
+                    <label id="font_label">FONT</label>
+                    <div class="box">
+                        <select id="font">
+                            <option hidden selected>Choose font</option>
+                            <option value="Arial" style="font-family: Arial;">Arial</option>
+                            <option value="Impact" style="font-family: Impact;">Impact</option>
+                            <option value="Comic Sans MS" style="font-family: Comic Sans MS;">Comic Sans MS</option>
+                            <option value="Courier New" style="font-family: Courier New;">Courier New</option>
+                            <option value="Lucida Console" style="font-family: Lucida Console;">Lucida Console</option>
+                            <option value="Symbol" style="font-family: Symbol;">Symbol</option>
+                            <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                            <option value="Bebas Neue" style="font-family: Bebas Neue, cursive;">Bebas Neue</option>
+                            <option value="新細明體" style="font-family: 新細明體;">新細明體</option>
+                            <option value="標楷體" style="font-family: 標楷體;">標楷體</option>
+                            <option value="微軟正黑體" style="font-family: 微軟正黑體;">微軟正黑體</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--button-->
+        <div class="container" id="button_container">
+            <button class="big-button" id="point"><img src="img/point.png" style="width:50px;height:50px;"></button>
+            <button class="big-button" id="brush"><img src="img/brush.png" style="width:50px;height:50px;"></button>
+            <button class="big-button" id="draw"><img src="img/pen.png" style="width:50px;height:50px;"></button>
+            <button class="big-button" id="erase"><img src="img/eraser.png" style="width:50px;height:50px;"></button>
+            <button class="big-button" id="undo"><img src="img/undo.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="redo"><img src="img/redo.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="reset"><img src="img/reset.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="text"><img src="img/text.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="download"><img src="img/download.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="upload"><img src="img/upload.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="circle"><img src="img/circle.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="rectangle"><img src="img/square.png" style="width: 50px;height: 50px;"></button>
+            <button class="big-button" id="triangle"><img src="img/triangle.png" style="width: 50px;height: 50px;"></button>
+        </div>
+    </bod>>
+
+</html>
